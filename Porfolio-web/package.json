@@ -10,11 +10,11 @@
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^13.5.0",
     "framer-motion": "^11.0.0",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
     "react-icons": "^5.5.0",
     "react-intersection-observer": "^9.16.0",
-    "react-scripts": "^4.0.3",
+    "react-scripts": "^5.0.1",
     "react-tsparticles": "^2.12.2",
     "three": "^0.177.0",
     "tsparticles-slim": "^2.12.0",
@@ -22,9 +22,10 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "tailwind-init": "./node_modules/.bin/tailwindcss.cmd init -p"
   },
   "eslintConfig": {
     "extends": [
@@ -45,6 +46,9 @@
     ]
   },
   "devDependencies": {
-
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "postcss-import": "^16.1.1",
+    "tailwindcss": "^4.1.11"
   }
 }
